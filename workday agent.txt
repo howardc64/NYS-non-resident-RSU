@@ -1,12 +1,14 @@
 Make spreadsheet with persistent column header
 
-A travel log including travel start and end time. Include purpose. Add a tab in spreadsheet.
+A travel log including travel start and end time. Include purpose. Add a tab towards the right side in spreadsheet.
 
-Summarize results for each RSU block and include vacation days, work from home days, holidays, sick days, NYS work days, and non-NYS work days. Add a tab in spreadsheet
+Summarize results for each RSU block and include vacation days, work from home days, holidays, sick days, NYS work days, and non-NYS work days. Add a summary tab towards left side in spreadsheet
 
-Make a separate spreadsheet tab for each RSU block daily log including location, purpose, NYS work day, non-NYS work day
+Make a daily log tab including location, purpose, note RSU blocks still vesting, NYS work day, non-NYS work day
 
-Make list of NYS working days in 2025 after moving away from NY and start working for WA employer. Compute total days. Put into its own spreadsheet tab. This help user to calculate wage tax without employer withholding
+Make list of NYS working days in 2025 after moving away from NY and start working for WA employer. Compute total days. Put into its own spreadsheet tab. Add a summary in the summary tab. This help user to calculate wage tax without employer withholding
+
+Note the NYS tax rules and travel rules at bottom of summary tab
 
 Check results and correct any mistakes
 

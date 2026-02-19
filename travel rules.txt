@@ -1,0 +1,15 @@
+
+
+=== Travel Rules
+
+Treat EWR as airport for NYC
+
+Actual day of travel to and from outside NYS location count as non-NYS work day
+
+Travel Itinerary formats
+
+date "airport code or city name" "airport code or city name" "arrival time" (travel mode and/or purpose)
+
+Location formats
+
+date "airport code or city name" 

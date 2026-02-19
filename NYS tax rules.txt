@@ -10,10 +10,10 @@ work days are only Monday through Friday. Weekends are not work days
 
 Two kinds of work days
 
-1. NYS work days include
+1. NYS workday include
 	A. Work in NY regardless of domicile location
 	B. Work from home days when working for NY company
 
-2. non-NYS work days include
-	X. Work days outside NYS counts as non NYS-work days. Except 1B
+2. non-NYS workday include
+	X. Work days outside NYS except 1B
 	Y. Work days during work travel to other states (not NYS)
