@@ -1,0 +1,13 @@
+Make spreadsheet with persistent column header
+
+A travel log including travel start and end time. Include purpose. Add a tab in spreadsheet.
+
+Summarize results for each RSU block and include vacation days, work from home days, holidays, sick days, NYS work days, and non-NYS work days. Add a tab in spreadsheet
+
+Make a separate spreadsheet tab for each RSU block daily log including location, purpose, NYS work day, non-NYS work day
+
+Make list of NYS working days in 2025 after moving away from NY and start working for WA employer. Compute total days. Put into its own spreadsheet tab. This help user to calculate wage tax without employer withholding
+
+Check results and correct any mistakes
+
+adjust spreadsheet cell proportions to be more readable
