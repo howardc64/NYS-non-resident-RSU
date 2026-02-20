@@ -8,16 +8,9 @@ An effective solution is just ask LLM to generate initial results and prompt it 
 
 LLM will make some mistakes but so will a human doing this work. Archeological info isn’t perfect and we don’t have a minute by minute accounting of every day. These files contain suggestions for the LLM to make estimates. And also some obvious info that an LLM should already understand. These are added and represent "hard rules" to minimize LLM errors. Personally I think doing by hand will take a long time and the person will be tired and confused by all the tax rules in their head when completed. This will likely result in mental mistake and typos.
 
-Generated result is a spreadsheet but it’s really just tables of numbers and no formulas. Not sure it’s possible to construct the complex spreadsheet formulas to account for all the requirements. Through repeated testing, I can see the complexity and many edge cases
+Generated result is a spreadsheet like a daily timesheet with a 1 added to the type of day it is. A summary sheet then sums these up for each RSU block to produce the numbers for NYS's RSU prorating tax form (IT-203F Sched B)
 
-- Every working date range need to eliminate weekends, holidays, sick days, travel time
-- These days can over lap. For example sick day on a weekend, holiday, or vacation.
-- Holidays can occur on weekends and employers often bump to subsequent Monday.
-- On travel days with potential NYS working hours, travel time need to be estimated to determine if any time remain to work in NYS location.
-
-As noted above doing all this correctly while applying the list of tax law requirements probably drives someone insane after a couple of days :)
-
-CPAs (Much less doing non-resident RSUs and probably charge $$$) might assign a junior person that would section out date blocks and work through them slowly. Can't imagine it's cheap to achieve precision. Foreign expat tax analysis/prep service providers might have developed a set of tools to step by step churn through the data to arrive at the figures.
+CPAs (Much fewer doing non-resident RSUs and probably charge $$) might assign a junior person that would section out date blocks and work through them slowly. Can't imagine it's cheap to achieve precision. Foreign expat / cross state tax analysis/prep service providers might have developed procedures and tools to step by step churn through the data to arrive at the figures. They probably mainly target companies with relocation needs as clients rather than consumers.
 
 ==== Files
 
@@ -36,7 +29,8 @@ All the files are pretty self explanatory
 - workday agent is sequence of prompt to the LLM asking it to count work days and non work days
 - README is this file
 - Results folder are my LLM run results
-	Note in the chat I had to correct the LLM multiple times (know this data well after working with it for a few days) despite having all the rules in place. The reason is LLM is generating code to generate the spreadsheet with errors in the code.
+	Note all the thoroughness prompt caused the LLM to recheck its work multiple times and eventually got it correct.
+	I have had runs where LLM made mistakes with the slightest ambiguity
 	For each RSU block total days, weekend, holiday, NYS workday non-NYS workday WFH vacation sick #s are directly entered into IT-203F Sched B form. Form then compute numerator for the workday fraction using these numbers. 
 
 ==== LLM
@@ -57,6 +51,33 @@ In Results Folder
 
 - AI produced spreadsheet
 - AI chat log
+
+==== Itinerary Formats
+
+There are some ambiguities that will confused an LLM and its generated code. Here are some cases
+
+First make the itinerary as precise and consistent as possible. My examples show
+
+Date departure time arrival time (note)
+
+This website can find all details if have departure and arrival airports with just 1 of the times. If no time stamp, It will give you all flights the took place on that date between the 2 airports.
+
+https://www.flightera.net/en/search
+
+Day trips
+
+1. Date X departure A destination B
+2. Date X departure B destination A
+
+Because there are no time stamps, LLM can see 2 happen before 1 and get all confused. Can solve by adding some time hints like destination arrival for 1 in the morning and 2 in the evening.
+
+Multi leg multi purpose trips
+
+This can be hard to specify. First have to chop up different purposes into different segments and put in the correct file (vacations, WFH, work trip)
+
+Also may be necessary to note staying in a location for a particular purpose rather than construct travel itineraries. For example
+
+After travel itinerary, just add (vacation until date X)
 
 ==== Travel classification
 
