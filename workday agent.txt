@@ -1,15 +1,15 @@
-Make spreadsheet with persistent column header
+Make a sheet for log of single leg travel including any mode of transportation. Column for transportation mode, departure location, travel start date, travel start time, destination, travel end date, travel end time, purpose.
 
-A travel log including travel start and end time. Include purpose. Add a tab towards the right side in spreadsheet.
+A daily log sheet including column for date, abbreviated weekday name, day_info. Add columns for workday, NYS workday, non-NYS workday, work from home, weekend, vacation, holiday, sick, Insert 1 in cell if true. A column per RSU block vesting status (1 if within vesting period), insert 1 if true. Insert left of travel log sheet.
 
-Summarize results for each RSU block and include vacation days, work from home days, holidays, sick days, NYS work days, and non-NYS work days. Add a summary tab towards left side in spreadsheet
+Make a summary sheet. One row per RSU block. Columns are sum (use spreadsheet SUM function) from the daily log sheet of NYS workday, non-NYS workday, weekend day, holiday, vacation day, work from home day, sick day for that RSU block. Add a column for total number of days for the RSU block period. Insert as left most sheet.
 
-Make a daily log tab including location, purpose, note RSU blocks still vesting, NYS work day, non-NYS work day
+SUM (use spreadsheet SUM function) NYS workday after moving to WA until end of 2025. Add this to  summary sheet. This help user to calculate wage tax without employer withholding
 
-Make list of NYS working days in 2025 after moving away from NY and start working for WA employer. Compute total days. Put into its own spreadsheet tab. Add a summary in the summary tab. This help user to calculate wage tax without employer withholding
+Check if correctly applied the rules to determine NYS workday or non-NYS workday for all travel day
 
-Note the NYS tax rules and travel rules at bottom of summary tab
+Check all work from home days are correct according to the rules
 
-Check results and correct any mistakes
+Check every day only one of the following is true :  NYS workday, non-NYS workday, weekend, holiday, vacation, sick
 
 adjust spreadsheet cell proportions to be more readable

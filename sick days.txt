@@ -2,6 +2,3 @@
 
 === Sick Days
 
-Sick days do not count as NY workdays or non-NY workday
-
-Date format mm/dd/yr

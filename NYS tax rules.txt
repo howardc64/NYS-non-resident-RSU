@@ -4,16 +4,19 @@
 
 NYS = New York State
 
-NYS Tax Rules
-
-work days are only Monday through Friday. Weekends are not work days
+workdays are only Monday through Friday. Weekends, vacation, sick day, are not workdays
 
 Two kinds of work days
 
 1. NYS workday include
-	A. Work in NY regardless of domicile location
-	B. Work from home days when working for NY company
+	A. Work in NYS regardless of domicile location
 
 2. non-NYS workday include
-	X. Work days outside NYS except 1B
+	X. Work days outside NYS
 	Y. Work days during work travel to other states (not NYS)
+
+=== NYS non-Resident Tax Form IT-203F Sched B rules
+
+Don't count vacation and sick day on weekends and holidays
+If vacation day, don't count as sick day
+Only count work from home day if it is a workday

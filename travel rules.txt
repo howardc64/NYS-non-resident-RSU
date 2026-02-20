@@ -4,12 +4,20 @@
 
 Treat EWR as airport for NYC
 
-Actual day of travel to and from outside NYS location count as non-NYS work day
+Estimating time need to consider time zone
 
-Travel Itinerary formats
+If departure time is missing, estimate based on arrival time based on transportation mode
 
-date "airport code or city name" "airport code or city name" "arrival time" (travel mode and/or purpose)
+If both departure time and arrival time are missing, estimate by common travel schedule between the 2 locations based on the transportation mode
 
-Location formats
+For flight travel, add 3 hours before departure time for travel start time and 2 hours after arrival for travel end time
 
-date "airport code or city name" 
+Same departure and destination means not traveling
+
+Assign location at every stop for > 2 leg trips
+
+Potential work day time is reduced on travel days from 10am to 4pm
+
+Work travel on a workday
+	If either departure or destination location which can be classified as NYS workday on this day and have time to work outside travel time, then count as NYS workday. Otherwise, count as non-NYS workday.
+
