@@ -4,3 +4,5 @@
 
 Weekends, vacations, sick days, holidays are not workdays
 
+Ignore text after XXX These are just notes for human readers
+

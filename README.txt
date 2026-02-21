@@ -54,6 +54,8 @@ In Results Folder
 
 ==== Itinerary Formats
 
+AI is asked to ignore everything to the right of XXX These are just notes for human readers
+
 There are some ambiguities that will confused an LLM and its generated code. Here are some cases
 
 First make the itinerary as precise and consistent as possible. My examples show
@@ -81,7 +83,7 @@ After travel itinerary, just add (vacation until date X)
 
 ==== Travel classification
 
-One of the most difficult and require a lot of context to get correct. Amongst these
+One of the most difficult and require a lot of context to get correct and AI often gets it wrong Amongst these
 
 For business trip, need to understand where location is the business trip. This gets challenging in trips combining other personal activities and > 2 legs.
 

@@ -10,14 +10,16 @@ If departure time is missing, estimate based on arrival time based on transporta
 
 If both departure time and arrival time are missing, estimate by common travel schedule between the 2 locations based on the transportation mode
 
-For flight travel, add 3 hours before departure time for travel start time and 2 hours after arrival for travel end time
+For flight travel, travel schedule starts 3 hours before departure time for travel start time and end 2 hours after arrival.
 
 Same departure and destination means not traveling
 
 Assign location at every stop for > 2 leg trips
 
-Potential work day time is reduced on travel days from 10am to 4pm
+=== Travel days occurring on workdays
 
-Work travel on a workday
-	If either departure or destination location which can be classified as NYS workday on this day and have time to work outside travel time, then count as NYS workday. Otherwise, count as non-NYS workday.
+On workday travel days
+
+1. reduce workday schedule from 10am to 4pm at both departure and destination location.
+2. if include NYS location and have time to work there in the reduced workday schedule (within the same travel day) outside of the travel schedule, then count as NYS workday. Otherwise, count as non-NYS workday.
 

@@ -3,11 +3,12 @@
 === Spreadsheet Specification
 
 Make excel spreadsheet with persistent column header
+Column header text can wrap to allow narrower columns
 
-Use different light colors to color the cell when it is NYS workday, non-NYS workday, vacation day, holiday day, work from home day, sick day
+Use different light colors to color just the cell (not the entire row) when it is NYS workday, non-NYS workday, vacation day, holiday day, work from home day, sick day
 
 During RSU vesting period, color cell dark green
 
 On holiday day, display name of holiday in the day_info column.
 On travel day, display departure and destination
-All other days display travel location
+All other days display location for the day

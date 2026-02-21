@@ -1,15 +1,17 @@
-Make a sheet for log of single leg travel including any mode of transportation. Column for transportation mode, departure location, travel start date, travel start time, destination, travel end date, travel end time, purpose.
+Make a sheet for log of single leg travel including any mode of transportation. Column for transportation mode, departure location, travel start date, travel start time, departure time, destination, travel end date, arrival time, travel end time, purpose.
 
-A daily log sheet including column for date, abbreviated weekday name, day_info. Add columns for workday, NYS workday, non-NYS workday, work from home, weekend, vacation, holiday, sick, Insert 1 in cell if true. A column per RSU block vesting status (1 if within vesting period), insert 1 if true. Insert left of travel log sheet.
+A daily log sheet including column for date, abbreviated weekday name, day_info. Add columns for NYS workday, non-NYS workday, work from home, weekend, vacation, holiday, sick, Insert 1 (in bold) if true. 2x thickness cell border around continuous vertical columns of cells with 1. A column per RSU block. Insert left of travel log sheet.
 
 Make a summary sheet. One row per RSU block. Columns are sum (use spreadsheet SUM function) from the daily log sheet of NYS workday, non-NYS workday, weekend day, holiday, vacation day, work from home day, sick day for that RSU block. Add a column for total number of days for the RSU block period. Insert as left most sheet.
 
-SUM (use spreadsheet SUM function) NYS workday after moving to WA until end of 2025. Add this to  summary sheet. This help user to calculate wage tax without employer withholding
+SUM (use spreadsheet SUM function) NYS workday after moving to WA until end of 2025. Add this to  summary sheet. This help user to calculate wage tax without employer withholding.
 
-Check if correctly applied the rules to determine NYS workday or non-NYS workday for all travel day
+Check work travel day if NYS workday and non-NYS workday status is correct. These are complex and AI frequently make mistakes.
 
-Check all work from home days are correct according to the rules
+Check all work from home days are correct according to the rules.
 
-Check every day only one of the following is true :  NYS workday, non-NYS workday, weekend, holiday, vacation, sick
+Check every day only one of the following is true :  NYS workday, non-NYS workday, weekend, holiday, vacation, sick.
 
-adjust spreadsheet cell proportions to be more readable
+For each RSU block in the summary sheet, add a column on the right to check total days = total NYS workday + total non-NYS workday + total weekends + total holidays + total vacations + total sick days.
+
+adjust spreadsheet cell proportions to be more readable.
