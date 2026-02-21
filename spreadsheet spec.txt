@@ -10,4 +10,4 @@ During RSU vesting period, color cell dark green
 
 On holiday day, display name of holiday in the day_info column.
 On travel day, display departure and destination
-All other days display location
+All other days display travel location
