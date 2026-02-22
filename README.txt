@@ -2,15 +2,15 @@
 
 LLM is notorious for making mistakes. It can generate a lot of stuff and its up to the human to verify to make sure no mistakes
 
-Repeated runs of same data and prompt to LLM often produce different results. Sometimes stylistic. Sometime different summaries. Sometimes even different resulting answers! Every run can even takes different process and use different tools. Mainly depends on how much complexity and ambiguity is in the data set and prompts.
+Repeated runs of same data and prompt to LLM often produce different results. Sometimes stylistic. Sometime different summaries. Sometimes even different resulting answers! Every run can even take different process and use different tools. Mainly depends on how much complexity and ambiguity is in the data set and prompts.
 
 An effective solution is just ask LLM to generate initial results and prompt it to fix obvious bugs followed by manual adjustment for final result. Trying to use LLM to step by step generate the final result reliably may not be time efficient as LLM can fix one bug while introduce a different one with each new run.
 
-LLM will make some mistakes but so will a human doing this work. Archeological info isn’t perfect and we don’t have a minute by minute accounting of every day. These files contain suggestions for the LLM to make estimates. And also some obvious info that an LLM should already understand. These are added and represent "hard rules" to minimize LLM errors. Personally I think doing by hand will take a long time and the person will be tired and confused by all the tax rules in their head when completed. This will likely result in mental mistake and typos.
+LLM will make some mistakes but so will a human doing this work. Archeological data isn’t perfect and we don’t have a minute by minute accounting of every day. These files contain suggestions for the LLM to make estimates. And also some obvious info that an LLM should already understand. These are added and represent "hard rules" to minimize LLM errors. Personally I think doing by hand will take a long time and the person will be tired and confused by all the tax rules in their head during the process. This will likely result in mental mistake and typos.
 
-Generated result is a spreadsheet like a daily timesheet with a 1 added to the type of day it is. A summary sheet then sums these up for each RSU block to produce the numbers for NYS's RSU prorating tax form (IT-203F Sched B)
+Generated result from the LLM prompts is a spreadsheet like a daily timesheet with a 1 marked to the type of day it is. A summary sheet then sum up these day types for each RSU block to produce the numbers for NYS's RSU prorating tax form (IT-203F Sched B)
 
-CPAs (Much fewer doing non-resident RSUs and probably charge $$) might assign a junior person that would section out date blocks and work through them slowly. Can't imagine it's cheap to achieve precision. Foreign expat / cross state tax analysis/prep service providers might have developed procedures and tools to step by step churn through the data to arrive at the figures. They probably mainly target companies with relocation needs as clients rather than consumers.
+CPAs (Much fewer doing non-resident RSUs and probably charge $$) might assign a junior person that would tackle small sections of dates at a time and work through them slowly. Can't imagine it's cheap to achieve precision. Foreign expat / cross state tax analysis/prep service providers might have developed procedures and tools to step by step churn through the data to arrive at the figures. They probably mainly target companies with relocation needs as clients rather than consumers.
 
 ==== Files
 
@@ -18,26 +18,30 @@ All the files are pretty self explanatory
 
 - work travel is a list of dates traveling for work
 - holidays are company holidays
-- work from home are dates working from home according to NYS tax code (only WFH days when assigned to NYS work office) Do not entire WFH when assigned to outside NYS work office.
+- work from home are dates working from home according to NYS tax code (only WFH days when assigned to NYS work office) Do not enter WFH when assigned to outside NYS work office.
 - vacation are vacation dates
+- sick days are list of sick days
 - domicile work includes dates and where domiciled and worked
 - travel rules provides some guidelines on travel schedule and airports
 - NYS tax rules include key work day location tax rules
-- basic rules are obvious rules serving as a reminder to the LLM
+- basic rules are obvious rules serving as a guide rail to the LLM to minimize mistakes
 - RSUs are list of RSU blocks
-- spreadsheet spec is the construction guidance
+- spreadsheet spec is the spreadsheet construction rules
 - workday agent is sequence of prompt to the LLM asking it to count work days and non work days
 - README is this file
 - Results folder are my LLM run results
-	Note all the thoroughness prompt caused the LLM to recheck its work multiple times and eventually got it correct.
-	I have had runs where LLM made mistakes with the slightest ambiguity
-	For each RSU block total days, weekend, holiday, NYS workday non-NYS workday WFH vacation sick #s are directly entered into IT-203F Sched B form. Form then compute numerator for the workday fraction using these numbers. 
+
+On the LLM chat session (Results/Claude.pdf), note the LLM checking its work carefully. Finding mistakes and eventually got it correct. These likely occurred with the addition double check requests in the workday agent prompt sequence
+
+I have had runs where LLM made mistakes with the slightest ambiguity
+
+For each RSU block total days, weekend, holiday, NYS workday non-NYS workday WFH vacation sick Enter the #s directly into IT-203F Sched B form. Form directions then will compute the workday fraction using these numbers. 
 
 ==== LLM
 
 - Info from (2/16/26)
 - Claude free tier Claude Sonnet 4.5
-- Free tier chatGPT can not upload more than 3 files. Tried combining files together and still didn't work. Seems to require more precise data formats.
+- Free tier chatGPT could not upload more than 3 files. Tried combining files together and still didn't work. Seems to require more precise data formats.
 
 ==== How to Run
 
