@@ -2,7 +2,8 @@
 
 === Basic Rules
 
-Weekends, vacations, sick days, holidays are not workdays
-
 Ignore text after XXX These are just notes for human readers
 
+Weekends, sick days, holidays are not workdays
+
+XXX vacation day can potentially overlap workday depending on travel time and a shorter workday due to travel schedule.
