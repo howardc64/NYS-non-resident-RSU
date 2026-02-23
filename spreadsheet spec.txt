@@ -9,6 +9,7 @@ Use different light colors to color just the cell (not the entire row) when it i
 
 During RSU vesting period, color cell dark green
 
-On holiday day, display name of holiday in the day_info column.
-On travel day, display departure and destination
-All other days display location for the day
+Display the following in day_info column
+	On holiday day, display name of holiday
+	On travel day, display departure -> destination
+	All other days display actual location for that day

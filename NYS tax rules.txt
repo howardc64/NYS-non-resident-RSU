@@ -10,6 +10,7 @@ Two kinds of work days
 
 1. NYS workday include
 	A. Work in NYS regardless of domicile location
+	XXX do not add Convenience of the Employer (COE) rule here. NYC tax form count these (WFH while work for NYS employer) separately and add to NYS workday to calculate COE
 
 2. non-NYS workday include
 	X. Work days outside NYS

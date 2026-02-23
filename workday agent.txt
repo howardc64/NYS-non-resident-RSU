@@ -6,7 +6,7 @@ Make a summary sheet. One row per RSU block. Columns are sum (use spreadsheet SU
 
 SUM (use spreadsheet SUM function) NYS workday after moving to WA until end of 2025. Add this to  summary sheet. This help user to calculate wage tax without employer withholding.
 
-Check work travel day if NYS workday and non-NYS workday status is correct. These are complex and AI frequently make mistakes.
+Check travel day on workday with NYS location if enough time to work.
 
 Check all work from home days are correct according to the rules.
 
