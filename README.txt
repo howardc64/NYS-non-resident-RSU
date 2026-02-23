@@ -56,7 +56,7 @@ In Results Folder
 - AI produced spreadsheet
 - AI chat log
 
-==== Itinerary Formats
+==== Formats
 
 AI is asked to ignore everything to the right of XXX These are just notes for human readers
 
@@ -91,9 +91,7 @@ One of the most difficult and require a lot of context to get correct and AI oft
 
 For business trip, need to understand where location is the business trip. This gets challenging in trips combining other personal activities and > 2 legs.
 
-NYS tax rule require any amount of time in a day spent working in NYS be marked as NYS workday. Adding more guidance to LLM to estimate with travel windows and time zones can also increase ambiguity and complexity causing errors (seen in my correction prompts to Claude in Results folder).
-
-Easiest solution maybe for mark travel as non-NYS workday for any travel window > 4-5 hours. However, this maybe wrong in late day westward flights from NYC/NYS.
+NYS tax rule require any amount of time in a day spent working in NYS be marked as NYS workday. Adding more rules to LLM to estimate with travel windows, time zones, and potential work windows in NYS can also increase ambiguity and complexity causing errors. Current travel rules contains this and seems to work well. Just note it's quite a tricky case for the LLM to handle. Easiest solution maybe for mark travel as non-NYS workday for any travel window > 4-5 hours. However, this maybe wrong in late day westward flights from NYC/NYS.
 
 ==== NYS Tax non-resident income tax Laws and Forms
 

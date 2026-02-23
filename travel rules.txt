@@ -10,6 +10,8 @@ If departure time is missing, estimate based on arrival time based on transporta
 
 If both departure time and arrival time are missing, estimate by common travel schedule between the 2 locations based on the transportation mode
 
+If > 1 trips on the same day don't have both departure and arrival time, warn user this is ambiguous to determine the order of travel
+
 For flight travel, travel schedule starts 3 hours before departure time for travel start time and end 2 hours after arrival.
 
 Same departure and destination means not traveling
