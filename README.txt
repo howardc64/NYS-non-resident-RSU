@@ -31,7 +31,7 @@ All the files are pretty self explanatory
 - README is this file
 - Results folder are my LLM run results
 
-On the LLM chat session (Results/Claude.pdf), note the LLM checking its work carefully. Finding mistakes and eventually got it correct. These likely occurred with the addition double check requests in the workday agent prompt sequence
+On the LLM chat session (Results/Claude.pdf), note my additional prompts to for corrections and updated some date files.
 
 I have had runs where LLM made mistakes with the slightest ambiguity
 
