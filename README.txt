@@ -51,10 +51,8 @@ For each RSU block total days, weekend, holiday, NYS workday non-NYS workday WFH
 
 ==== Results
 
-In Results Folder
-
-- AI produced spreadsheet
-- AI chat log
+- AI produced excel spreadsheet
+- AI chat log Claude.pdf
 
 ==== Formats
 
@@ -110,3 +108,7 @@ The calculations for the forms are very convoluted requiring a daily log constru
 - Prompt ordering probably matters. workday agent starts by building a travel list with estimated travel windows. This knowledge is necessary for later prompts to determine if any time is left in NYS on a normal work day schedule to consider NYS work day.
 
 - If travel heavy like this example, run the first prompt repeatedly to make sure get a good travel log while cleaning up data set and prompt. Correctly built travel log is key for the remaining tasks.
+
+==== HUGE ACCURACY IMPROVEMENT
+
+- supply previously made excel output as input to the new run greatly improves correctness. AI can use it to check its new efforts.
