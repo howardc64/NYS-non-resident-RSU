@@ -15,3 +15,7 @@ Check every day only one of the following is true :  NYS workday, non-NYS workda
 For each RSU block in the summary sheet, add a column on the right to check total days = total NYS workday + total non-NYS workday + total weekends + total holidays + total vacations + total sick days.
 
 adjust spreadsheet cell proportions to be more readable.
+
+====
+
+Use prior correct excel sheet as reference
